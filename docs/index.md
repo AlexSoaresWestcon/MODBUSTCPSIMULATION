@@ -1,9 +1,5 @@
 # Configuração de Link Backup nos InGateways IG502 e IG902
 
-
-
-# # Configuração de Link Backup IG502/IG902
-
   - [1. Introdução ao Link Backup](#intro-linkbackup)
   - [2. Configuração do Link Backup](#config-linkbackup)
     - [2.1 SLA](#sla)
