@@ -53,10 +53,10 @@ The panel introduction of IG902 is shown in the figure below (The IG900 series p
 You can render UML diagrams using [Mermaid](https://mermaidjs.github.io/). For example, this will produce a sequence diagram:
 
 ``` mermaid
-  graph LR
-    A[Start] --> B{Error?};
-    B -->|Yes| C[Hmm...];
-    C --> D[Debug];
-    D --> B;
-    B ---->|No| E[Yay!];
+graph LR
+  A[Start] --> B{Error?};
+  B -->|Yes| C[Hmm...];
+  C --> D[Debug];
+  D --> B;
+  B ---->|No| E[Yay!];
 ```
