@@ -35,6 +35,7 @@ Acesse o item SLA através da aba Link Backup, como ilustrado abaixo:
 ![](images/linkBackup_SLA.png)
 
 O **SLA** é parametrizado conforme abaixo:
+
 * **Type**:  **icmp-echo**, mais popularmente conhecido como "ping"
 * **Destination Address**:  um endereço IP ao qual o pacote ICMP será direcionado
 * **Data size**:  tamanho do pacote (56 bytes por padrão)
