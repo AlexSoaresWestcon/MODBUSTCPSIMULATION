@@ -6,13 +6,13 @@
     - [2.1 SLA](#sla)
       - [2.1.1 SLA Status](#sla-status)
     - [2.2 Track](#track)
-      - [2.1.1 Track Status](#track-status)
+      - [2.2.1 Track Status](#track-status)
     - [2.3 Interface Backup](#interfacebackup)
-      - [2.1.1 Interface Backup Status](#interfacebackup-status)
-    - [3.1 Rota Estática](#staticroute)
-  - [4. Notas](#notas)
-    - [4.1 Roteamento Estático ICMP](#staticroutingicmp)
-    - [4.2 Cellular ICMP Probe](#cellularicmp)
+      - [2.3.1 Interface Backup Status](#interfacebackup-status)
+    - [2.4 Rota Estática](#staticroute)
+  - [3. Notas](#notas)
+    - [3.1 Roteamento Estático ICMP](#staticroutingicmp)
+    - [3.2 Cellular ICMP Probe](#cellularicmp)
 
 <a id="intro-linkbackup"> </a>
 
@@ -104,7 +104,7 @@ Na aba **Status** é possível acompanhar qual interface está ative, a principa
 ![](images/linkBackup_InterfaceBackup_Status.png)
 
 <a id="staticroute"> </a>
-### 3.1 Rota Estática
+### 2.4 Rota Estática
 O quarto e último passo é configurar uma rota para a interface principal, se ela já não estiver criada.
 Caso já exista uma rota estática para a interface principal, adicione o número o **Track ID** já configurado.
 
@@ -120,11 +120,11 @@ Preencha os parâmetros:
 Clique em **OK** para adicionar e **Apply** para configurar.
 
 <a id="notas"> </a>
-## 4 Notas
+## 3 Notas
 Algumas outras questões devem ser levadas em consideração na hora de configura o Link Backup, entre elas estão a inclusão de roteamento estático para o SLA configurado e o Cellular ICMP Probe:
 
 <a id="staticroutingicmp"> </a>
-### 4.1 Roteamento Estático ICMP
+### 3.1 Roteamento Estático ICMP
 É importante adicionar um roteamento exclusivo para o teste de ICMP que foi configurado em SLA, esse roteamento faz com que o pacote ICMP não seja direcionado para a interface de secundária (Backup) e causando o falso estado do monitoramento da interface principal.
 Para configurar basta acessar **Static Routing** na aba **Network**. Clique no símbolo de mais para adicionar uma nova rota.
 
@@ -135,7 +135,7 @@ Preencha os parâmetros com o mesmo **Destination** configurado em **SLA** e sel
 Clique em **OK** para adicionar e **Apply** para configurar.
 
 <a id="cellularicmp"> </a>
-### 4.2 Cellular ICMP Probe
+### 3.2 Cellular ICMP Probe
 Cuidado ao utilizar Link Backup com **ICMP Probe** configurado em Cellular.Ao travar um rota estática para determinado IP, é muito importante verificar se esse mesmo IP não está sendo utilizado como **ICMP Probe** para monitorar o estado da rede celular e alternar o chip.
 
 Acesse o item **Cellular** na aba **Network**, altere o **ICMP Detection Server** para IP que não coincida com os eventuais IPs configurados em SLA.
