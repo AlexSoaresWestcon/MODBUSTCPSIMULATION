@@ -35,12 +35,12 @@ Acesse o item SLA através da aba Link Backup, como ilustrado abaixo:
 ![](images/linkBackup_SLA.png)
 
 O **SLA** é parametrizado conforme abaixo:
--  **Type**:  **icmp-echo**, mais popularmente conhecido como "ping"
--  **Destination Address**:  um endereço IP ao qual o pacote ICMP será direcionado
--  **Data size**:  tamanho do pacote (56 bytes por padrão)
--  **Interval(s)**:  tempo entre testes do monitoramento
--  **Timeout(ms)**:  tempo de espera do echo do pacote ICMP
--  **Consecutive**:  quantidade de testes consecutivos a cada intevalo de monitoramento 
+-**Type**:  **icmp-echo**, mais popularmente conhecido como "ping"
+-**Destination Address**:  um endereço IP ao qual o pacote ICMP será direcionado
+-**Data size**:  tamanho do pacote (56 bytes por padrão)
+-**Interval(s)**:  tempo entre testes do monitoramento
+-**Timeout(ms)**:  tempo de espera do echo do pacote ICMP
+-**Consecutive**:  quantidade de testes consecutivos a cada intevalo de monitoramento 
 
 Clique em **Add** para adicionar e **Apply** para configurar.
 
