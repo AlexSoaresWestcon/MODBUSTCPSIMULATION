@@ -35,12 +35,12 @@ Acesse o item SLA através da aba Link Backup, como ilustrado abaixo:
 ![](images/linkBackup_SLA.png)
 
 O **SLA** é parametrizado conforme abaixo:
--**Type**:  **icmp-echo**, mais popularmente conhecido como "ping"
--**Destination Address**:  um endereço IP ao qual o pacote ICMP será direcionado
--**Data size**:  tamanho do pacote (56 bytes por padrão)
--**Interval(s)**:  tempo entre testes do monitoramento
--**Timeout(ms)**:  tempo de espera do echo do pacote ICMP
--**Consecutive**:  quantidade de testes consecutivos a cada intevalo de monitoramento 
+* **Type**:  **icmp-echo**, mais popularmente conhecido como "ping"
+* **Destination Address**:  um endereço IP ao qual o pacote ICMP será direcionado
+* **Data size**:  tamanho do pacote (56 bytes por padrão)
+* **Interval(s)**:  tempo entre testes do monitoramento
+* **Timeout(ms)**:  tempo de espera do echo do pacote ICMP
+* **Consecutive**:  quantidade de testes consecutivos a cada intevalo de monitoramento 
 
 Clique em **Add** para adicionar e **Apply** para configurar.
 
@@ -60,11 +60,11 @@ Acesse o item Track através da aba Link Backup, como ilustrado abaixo:
 ![](images/linkBackup_Track.png)
 
 O **Track** é parametrizado conforme abaixo:
--  **Index**:  número que indica o índice do **Track**
--  **Type**:  tipo do _Tracking_, neste caso será **SLA**
--  **SLA ID/VRRP ID**:  _ID_ do **SLA** já configurado
--  **Negative Delay**:  tempo para que o **Track** seja declarado como _Down_ (fora de funcionamento)
--  **Positive Delay**:  tempo para que o **Track** seja declarado como _Up_ (em funcionamento)
+*  **Index**:  número que indica o índice do **Track**
+*  **Type**:  tipo do _Tracking_, neste caso será **SLA**
+*  **SLA ID/VRRP ID**:  _ID_ do **SLA** já configurado
+*  **Negative Delay**:  tempo para que o **Track** seja declarado como _Down_ (fora de funcionamento)
+*  **Positive Delay**:  tempo para que o **Track** seja declarado como _Up_ (em funcionamento)
 
 Clique em **Add** para adicionar e **Apply** para configurar.
 
@@ -84,11 +84,11 @@ Acesse o item Interface Backup através da aba Link Backup, como ilustrado abaix
 ![](images/linkBackup_InterfaceBackup.png)
 
 O item **Interface Backup** é parametrizado conforme abaixo:
--  **Main Interface**:  interface de rede principal
--  **Backup Interface**:  interface de rede secundária
--  **Startup Delay**:  tempo entre a incialização do InGateway e a inicialização do serviço de Link Backup
--  **Up Delay**:  tempo entre o **Track** em _Up_ e a troca da inteface de rede para a principal
--  **Down Delay**:  tempo entre o **Track** em _Down_ e a troca da inteface de rede para a secundária
+*  **Main Interface**:  interface de rede principal
+*  **Backup Interface**:  interface de rede secundária
+*  **Startup Delay**:  tempo entre a incialização do InGateway e a inicialização do serviço de Link Backup
+*  **Up Delay**:  tempo entre o **Track** em _Up_ e a troca da inteface de rede para a principal
+*  **Down Delay**:  tempo entre o **Track** em _Down_ e a troca da inteface de rede para a secundária
 
 Clique em **Add** para adicionar e **Apply** para configurar.
 
