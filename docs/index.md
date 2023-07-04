@@ -17,7 +17,7 @@ The InGateway902 (IG902 for short) series is a new-generation series of 4G edge 
 
 The following figure shows common application scenarios of the IG902.
 
-![](images/2020-07-14-16-08-11.png)
+![](images/linkBackup_Advanced.png)
 
 <a id="config-linkbackup"> </a>
 
