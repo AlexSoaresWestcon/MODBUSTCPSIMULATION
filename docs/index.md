@@ -9,7 +9,10 @@
       - [2.1.1 Track Status](#track-status)
     - [2.3 Interface Backup](#interfacebackup)
       - [2.1.1 Interface Backup Status](#interfacebackup-status)
+    - [3.1 Rota Estática](#staticroute)
   - [4. Notas](#notas)
+    - [4.1 Roteamento Estático ICMP](#staticroutingicmp)
+    - [4.2 Cellular ICMP Probe](#cellularicmp)
 
 <a id="intro-linkbackup"> </a>
 
@@ -40,11 +43,13 @@ O **SLA** é parametrizado conforme abaixo:
 -  **Consecutive**:  quantidade de testes consecutivos a cada intevalo de monitoramento 
 
 Clique em **Add** para adicionar e **Apply** para configurar.
+
 ![](images/linkBackup_SLA_Config.png)
 
 <a id="sla-status"> </a>
 #### 2.1.1 SLA Status
 Na aba **Status** é possível acompanhar o resultado dos _Service Level Agreements_, caso esteja _up_ o monitoramento o pacote ICMP foi bem sucedido:
+
 ![](images/linkBackup_SLA_Status.png)
 
 <a id="track"> </a>
@@ -62,11 +67,13 @@ O **Track** é parametrizado conforme abaixo:
 -  **Positive Delay**:  tempo para que o **Track** seja declarado como _Up_ (em funcionamento)
 
 Clique em **Add** para adicionar e **Apply** para configurar.
+
 ![](images/linkBackup_Track_Config.png)
 
 <a id="track-status"> </a>
 #### 2.2.1 Track Status
 Na aba **Status** é possível acompanhar o resultado dos _Trackings_, caso esteja _positive_ o monitoramento do SLA foi bem sucedido:
+
 ![](images/linkBackup_Track_Status.png)
 
 <a id="interfacebackup"> </a>
@@ -84,14 +91,51 @@ O item **Interface Backup** é parametrizado conforme abaixo:
 -  **Down Delay**:  tempo entre o **Track** em _Down_ e a troca da inteface de rede para a secundária
 
 Clique em **Add** para adicionar e **Apply** para configurar.
+
 ![](images/linkBackup_InterfaceBackup_Config.png)
 
 <a id="interfacebackup-status"> </a>
 #### 2.3.1 Interface Backup Status
 Na aba **Status** é possível acompanhar qual interface está ative, a principal é denotada como _main_ e a secundária como _backup_:
+
 ![](images/linkBackup_InterfaceBackup_Status.png)
 
+<a id="staticroute"> </a>
+### 3.1 Rota Estática
+O quarto e último passo é configurar uma rota para a interface principal, se ela já não estiver criada.
+Caso já exista uma rota estática para a interface principal, adicione o número o **Track ID** já configurado.
+
+Siga o exemplo abaixo:
+Para configurar basta acessar **Static Routing** na aba **Network**. Clique no símbolo de mais para adicionar ou no lápis para editar uma rota existente.
+
+![](images/linkBackup_StaticRouting.png)
+
+Preencha os parâmetros:
+
+![](images/linkBackup_StaticRouting_Eth1LinkTrack.png)
+
+Clique em **OK** para adicionar e **Apply** para configurar.
 
 <a id="notas"> </a>
-## 3 Notas
-The panel introduction of IG902 is shown in the figure below (The IG900 series product is applicable to multiple panel appearances, as they have the same installation method. Refer to the actual product during operation.):
+## 4 Notas
+Algumas outras questões devem ser levadas em consideração na hora de configura o Link Backup, entre elas estão a inclusão de roteamento estático para o SLA configurado e o Cellular ICMP Probe:
+
+<a id="staticroutingicmp"> </a>
+### 4.1 Roteamento Estático ICMP
+É importante adicionar um roteamento exclusivo para o teste de ICMP que foi configurado em SLA, esse roteamento faz com que o pacote ICMP não seja direcionado para a interface de secundária (Backup) e causando o falso estado do monitoramento da interface principal.
+Para configurar basta acessar **Static Routing** na aba **Network**. Clique no símbolo de mais para adicionar uma nova rota.
+
+Preencha os parâmetros com o mesmo **Destination** configurado em **SLA** e selecione a interface principal:
+
+![](images/linkBackup_StaticRouting_RouteICMP.png)
+
+Clique em **OK** para adicionar e **Apply** para configurar.
+
+<a id="cellularicmp"> </a>
+### 4.2 Cellular ICMP Probe
+Cuidado ao utilizar Link Backup com **ICMP Probe** configurado em Cellular.Ao travar um rota estática para determinado IP, é muito importante verificar se esse mesmo IP não está sendo utilizado como **ICMP Probe** para monitorar o estado da rede celular e alternar o chip.
+
+Acesse o item **Cellular** na aba **Network**, altere o **ICMP Detection Server** para IP que não coincida com os eventuais IPs configurados em SLA.
+Uma dica é utilizar endereço secundários de DNS, como o 8.8.4.4 da Google e 1.0.0.1 da Cloudflare.
+
+![](images/linkBackup_StaticRouting_RouteICMP.png)
