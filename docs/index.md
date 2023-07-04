@@ -61,6 +61,7 @@ Acesse o item Track através da aba Link Backup, como ilustrado abaixo:
 ![](images/linkBackup_Track.png)
 
 O **Track** é parametrizado conforme abaixo:
+
 *  **Index**:  número que indica o índice do **Track**
 *  **Type**:  tipo do _Tracking_, neste caso será **SLA**
 *  **SLA ID/VRRP ID**:  _ID_ do **SLA** já configurado
@@ -85,6 +86,7 @@ Acesse o item Interface Backup através da aba Link Backup, como ilustrado abaix
 ![](images/linkBackup_InterfaceBackup.png)
 
 O item **Interface Backup** é parametrizado conforme abaixo:
+
 *  **Main Interface**:  interface de rede principal
 *  **Backup Interface**:  interface de rede secundária
 *  **Startup Delay**:  tempo entre a incialização do InGateway e a inicialização do serviço de Link Backup
