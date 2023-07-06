@@ -13,6 +13,7 @@
   - [3. Notas](#notas)
     - [3.1 Roteamento Estático ICMP](#staticroutingicmp)
     - [3.2 Cellular ICMP Probe](#cellularicmp)
+    - [3.3 IP Fixo](#staticip)
 
 <a id="intro-linkbackup"> </a>
 
@@ -142,3 +143,5 @@ Acesse o item **Cellular** na aba **Network**, altere o **ICMP Detection Server*
 Uma dica é utilizar endereço secundários de DNS, como o 8.8.4.4 da Google e 1.0.0.1 da Cloudflare.
 
 ![](images/linkBackup_StaticRouting_RouteICMP.png)
+
+
