@@ -142,7 +142,7 @@ Cuidado ao utilizar Link Backup com **ICMP Probe** configurado em Cellular. Ao t
 Acesse o item **Cellular** na aba **Network**, altere o **ICMP Detection Server** para IP que não coincida com os eventuais IPs configurados em SLA.
 Uma dica é utilizar endereço secundários de DNS, como o 8.8.4.4 da Google e 1.0.0.1 da Cloudflare.
 
-![](images/linkBackup_StaticRouting_RouteICMP.png)
+![](images/linkBackup_Cellular_ICMP_Probe.png)
 
 
 <a id="staticip"> </a>
