@@ -14,6 +14,7 @@
     - [3.1 Roteamento Estático ICMP](#staticroutingicmp)
     - [3.2 Cellular ICMP Probe](#cellularicmp)
     - [3.3 IP Fixo](#staticip)
+    - [3.2 Configuração em Batelada](#batchconfig)
 
 <a id="intro-linkbackup"> </a>
 
@@ -150,3 +151,33 @@ Uma dica é utilizar endereço secundários de DNS, como o 8.8.4.4 da Google e 1
 Para configurar um IP Fixo (IP Estático), basta acessar a aba  **Network** e o item **Ethernet**. Acesse a porta de rede qual deseja configurar e na opção **Network Type** escolha _Static IP_. Preencha o endereço de IP e a máscara da rede e clique em **Submit** para finalizar a configuração.
 
 ![](images/ipEstatico_IPfixo.png)
+
+<a id="batchconfig"> </a>
+### 3.4 Configuração em Batelada
+Para realizar a configuração em batelada através do **InConnect** ou **Device Manager**, utilize o modelo de configuração em texto plano abaixo como referência:
+
+```
+#static route config
+ip route 0.0.0.0 0.0.0.0 gigabitethernet 0/1 192.168.15.1 254 track 1
+!
+#sla config
+sla 1
+  icmp-echo 8.8.8.8
+    request-data-size 56
+    frequency 30
+    timeout 5000
+    check-element probe-fail threshold-type consecutive 5
+!
+sla schedule 1 life forever start-time now
+!
+#track config
+track 1 sla 1 delay negative 5 positive 30
+!
+#backup config
+interface gigabitethernet 0/1
+  backup interface cellular 1
+  backup startup 10
+  backup delay 0 120
+  backup track 1
+!
+```
