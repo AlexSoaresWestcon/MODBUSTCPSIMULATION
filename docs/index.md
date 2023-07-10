@@ -137,7 +137,7 @@ Clique em **OK** para adicionar e **Apply** para configurar.
 
 <a id="cellularicmp"> </a>
 ### 3.2 Cellular ICMP Probe
-Cuidado ao utilizar Link Backup com **ICMP Probe** configurado em Cellular.Ao travar um rota estática para determinado IP, é muito importante verificar se esse mesmo IP não está sendo utilizado como **ICMP Probe** para monitorar o estado da rede celular e alternar o chip.
+Cuidado ao utilizar Link Backup com **ICMP Probe** configurado em Cellular. Ao travar um rota estática para determinado IP, é muito importante verificar se esse mesmo IP não está sendo utilizado como **ICMP Probe** para monitorar o estado da rede celular e alternar o chip.
 
 Acesse o item **Cellular** na aba **Network**, altere o **ICMP Detection Server** para IP que não coincida com os eventuais IPs configurados em SLA.
 Uma dica é utilizar endereço secundários de DNS, como o 8.8.4.4 da Google e 1.0.0.1 da Cloudflare.
@@ -145,3 +145,8 @@ Uma dica é utilizar endereço secundários de DNS, como o 8.8.4.4 da Google e 1
 ![](images/linkBackup_StaticRouting_RouteICMP.png)
 
 
+<a id="staticip"> </a>
+### 3.3 IP Fixo
+Para configurar um IP Fixo (IP Estático), basta acessar a aba  **Network** e o item **Ethernet**. Acesse a porta de rede qual deseja configurar e na opção **Network Type** escolha _Static IP_. Preencha o endereço de IP e a máscara da rede e clique em **Submit** para finalizar a configuração.
+
+![](images/ipEstatico_IPfixo.png)
