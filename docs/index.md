@@ -14,7 +14,8 @@
     - [3.1 Roteamento Estático ICMP](#staticroutingicmp)
     - [3.2 Cellular ICMP Probe](#cellularicmp)
     - [3.3 IP Fixo](#staticip)
-    - [3.2 Configuração em Batelada](#batchconfig)
+    - [3.4 Configuração em Batelada](#batchconfig)
+    - [3.5 Configuração do DNS](#configdns)
 
 <a id="intro-linkbackup"> </a>
 
@@ -181,3 +182,11 @@ interface gigabitethernet 0/1
   backup track 1
 !
 ```
+
+<a id="configdns"> </a>
+### 3.5 Configuração do DNS
+Para configurar o DNS, basta acessar na aba **Network**, o item **Network Services**/**DNS**.
+
+Altere os IPs do DNS Primary e/ou Secundary e clique em Submit:
+
+![](images/configDNS.png)
