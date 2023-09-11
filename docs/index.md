@@ -32,7 +32,16 @@ The simulation opens the local 502 port for Modbus TCP communication. To start t
 
 <a id="hmi-project"> </a>
 ## 3. HMI Project
-O primeiro passo da configuração do Link Backup é criar um **SLA** (Service Level Agreement), que irá monitorar a condição de internet seguindo os parâmetros definidos.
-Acesse o item SLA através da aba Link Backup, como ilustrado abaixo:
 
-![](images/linkBackup_SLA.png)
+Download the sample HMI project [here], unzip and import following the steps below:
+
+![](images/hmi_import.png)
+
+1. Click to cancel the Welcome Screen.
+2. **Right Click** Vijeo-Manager item on Navigator tool.
+3. CLick on Import Project.
+4. Select the sample project.
+5. Click to enable Open Project After Import.
+6. Open the project.
+   
+
