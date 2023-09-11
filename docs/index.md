@@ -34,7 +34,7 @@ The simulation opens the local 502 port for Modbus TCP communication. To start t
 <a id="hmi-project"> </a>
 ## 3. HMI Project
 
-Download the sample HMI project [here](../samples/PLC_Simulation.smbp), unzip and import following the steps below:
+Download the sample HMI project [**here**](https://raw.githubusercontent.com/AlexSoaresWestcon/MODBUSTCPSIMULATION/main/samples/HMI_Simulation_V2.vdz) (Right-click and save link as .vdz), unzip and import following the steps below:
 
 ![](images/hmi_import.png)
 
