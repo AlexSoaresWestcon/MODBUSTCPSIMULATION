@@ -1,4 +1,4 @@
-site_name: Guia de configuração InHand IG502/IG902
+site_name: Guide to Simulate PLC and HMI Modbus TCP Communication
 theme:
   name: readthedocs
   highlightjs: true
