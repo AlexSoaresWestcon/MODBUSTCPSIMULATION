@@ -15,7 +15,7 @@ Download and install the PLC software EcoStruxure Machine Expert Basic [here] an
 <a id="plc-project"> </a>
 ## 2. PLC Project
 
-Download the sample PLC project [**here**](https://raw.githubusercontent.com/AlexSoaresWestcon/MODBUSTCPSIMULATION/main/samples/PLC_Simulation.smbp) (Right-click and save link as .smbp), unzip and open (Ctrl+O) the file.
+Download the sample PLC project [**here**](https://raw.githubusercontent.com/AlexSoaresWestcon/MODBUSTCPSIMULATION/main/samples/PLC_Simulation.zip) (Right-click and save link as .zip), unzip and open (Ctrl+O) the file.
 The project has the following Modbus address characteristics:
 
 * Read Coils:  The sample has Modbus Coils addresses 01 to 06 mapped to sequential blinkers, the coils will blink each second in sequential order.
@@ -34,7 +34,7 @@ The simulation opens the local 502 port for Modbus TCP communication. To start t
 <a id="hmi-project"> </a>
 ## 3. HMI Project
 
-Download the sample HMI project [**here**](https://raw.githubusercontent.com/AlexSoaresWestcon/MODBUSTCPSIMULATION/main/samples/HMI_Simulation.vdz) (Right-click and save link as .vdz), unzip and import following the steps below:
+Download the sample HMI project [**here**](https://raw.githubusercontent.com/AlexSoaresWestcon/MODBUSTCPSIMULATION/main/samples/HMI_Simulation.zip) (Right-click and save link as .zip), unzip and import following the steps below:
 
 ![](images/hmi_import.png)
 
