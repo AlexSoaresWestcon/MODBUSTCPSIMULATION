@@ -24,7 +24,7 @@ The project has the following Modbus address characteristics:
 
 The simulation opens the local 502 port for Modbus TCP communication. To start the PLC simulation follow the steps below:
 
-![](images/plc_simulation.png)
+![](docs/images/plc_simulation.png)
 
 1. Click on Simulator Icon or enter Ctrl+B to Lauch Simulator.
 2. Click on Play Icon or enter Ctrl+M to Start PLC.
@@ -35,7 +35,7 @@ The simulation opens the local 502 port for Modbus TCP communication. To start t
 
 Download the sample HMI project [here], unzip and import following the steps below:
 
-![](images/hmi_import.png)
+![](docs/images/hmi_import.png)
 
 1. Click to cancel the Welcome Screen.
 2. **Right Click** Vijeo-Manager item on Navigator tool.
@@ -46,7 +46,7 @@ Download the sample HMI project [here], unzip and import following the steps bel
 
 Configure the PLC simulator IP by changing the ModbusPLC Server Equipment configuration on IO Manager/ModbusTCP Driver. Follow the steps below:
 
-![](images/configure_modbusplc.png)
+![](docs/images/configure_modbusplc.png)
 
 1. Scroll down on Navigator tool menu, click on ModbuPLC.
 2. On Property Inspector menu, click on the 3 dots option.
@@ -60,7 +60,7 @@ The HMI project has the following screens:
 
 To run the HMI simulation, follow the steps below:
 
-![](images/hmi_simulation.png)
+![](docs/images/hmi_simulation.png)
 
 1. On Build menu, click Simulation to lauch the simulator.
 
@@ -69,4 +69,4 @@ To run the HMI simulation, follow the steps below:
 
 If an attention marker appears over the screen objects, as shown below, that means no communication with the PLC Simulation could be establish. If the miscommunication was not on purpose, please check: the network settings on both machines and the IP address configured for PLC Simulaton on Vijeo Designer Basic.
 
-![](images/troubleshooting.png)
+![](docs/images/troubleshooting.png)
