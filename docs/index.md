@@ -1,7 +1,7 @@
 
-# Configuração de Link Backup IG502/IG902
+# Guide to simulate PLC and HMI Communication over Modbus TCP
 
-  - [1. Introdução ao Link Backup](#intro-linkbackup)
+  - [1. Engineering Tools Download](#download-softwares)
   - [2. Configuração do Link Backup](#config-linkbackup)
     - [2.1 SLA](#sla)
       - [2.1.1 SLA Status](#sla-status)
@@ -17,10 +17,11 @@
     - [3.4 Configuração em Batelada](#batchconfig)
     - [3.5 Configuração do DNS](#configdns)
 
-<a id="intro-linkbackup"> </a>
+<a id="download-softwares"> </a>
 
-## 1. Introdução ao Link Backup
+## 1. Engineering Tools Downloads
 
+Download the PLC software EcoStruxure Machine Expert Basic [here]
 Link Backup é uma função dos InGateways InHand IG502 e IG902. Essa função permite que seja configurada 2 formas de acesso à alguma rede Internet, sendo uma delas a forma principal e outra sendo secundária cumprindo o papel de Backup.
 
 <a id="config-linkbackup"> </a>
