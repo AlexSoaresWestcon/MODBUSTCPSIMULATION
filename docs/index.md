@@ -10,7 +10,7 @@
 
 ## 1. Engineering Tools Downloads
 
-Download and install the PLC software EcoStruxure Machine Expert Basic [here] and the HMI software EcoStruxure Vijeo Designer Basic [here]. The currently sample project supports Machine Expert Basic version 1.2 SP1 Patch 1 build 65760 and Vijeo Designer Basic V2.0.0.48.
+Download and install the PLC software EcoStruxure Machine Expert Basic [**here**](https://www.se.com/ww/en/download/document/MachineExpertBasic_V1_2_SP1_P1/) and the HMI software EcoStruxure Vijeo Designer Basic [**here**](https://www.se.com/ww/en/download/document/VijeoDesignerBasic/). The currently sample project supports Machine Expert Basic version 1.2 SP1 Patch 1 build 65760 and Vijeo Designer Basic V2.0.0.48.
 
 <a id="plc-project"> </a>
 ## 2. PLC Project
