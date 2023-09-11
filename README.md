@@ -1,3 +1,4 @@
+
 # Guide to simulate PLC and HMI Communication over Modbus TCP
 
   - [1. Engineering Tools Download](#download-softwares)
@@ -9,12 +10,12 @@
 
 ## 1. Engineering Tools Downloads
 
-Download and install the PLC software EcoStruxure Machine Expert Basic [here] and the HMI software EcoStruxure Vijeo Designer Basic [here]. The currently sample project supports Machine Expert Basic version 1.2 SP1 Patch 1 build 65760 and Vijeo Designer Basic V2.0.0.48.
+Download and install the PLC software EcoStruxure Machine Expert Basic [**here**](https://www.se.com/ww/en/download/document/MachineExpertBasic_V1_2_SP1_P1/) and the HMI software EcoStruxure Vijeo Designer Basic [**here**](https://www.se.com/ww/en/download/document/VijeoDesignerBasic/). The currently sample project supports Machine Expert Basic version 1.2 SP1 Patch 1 build 65760 and Vijeo Designer Basic V2.0.0.48.
 
 <a id="plc-project"> </a>
 ## 2. PLC Project
 
-Download the sample PLC project [here], unzip and open (Ctrl+O) the file.
+Download the sample PLC project [**here**](https://raw.githubusercontent.com/AlexSoaresWestcon/MODBUSTCPSIMULATION/main/samples/PLC_Simulation.zip) (Right-click and save link as .zip), unzip and open (Ctrl+O) the file.
 The project has the following Modbus address characteristics:
 
 * Read Coils:  The sample has Modbus Coils addresses 01 to 06 mapped to sequential blinkers, the coils will blink each second in sequential order.
@@ -33,7 +34,7 @@ The simulation opens the local 502 port for Modbus TCP communication. To start t
 <a id="hmi-project"> </a>
 ## 3. HMI Project
 
-Download the sample HMI project [here], unzip and import following the steps below:
+Download the sample HMI project [**here**](https://raw.githubusercontent.com/AlexSoaresWestcon/MODBUSTCPSIMULATION/main/samples/HMI_Simulation.zip) (Right-click and save link as .zip), unzip and import following the steps below:
 
 ![](docs/images/hmi_import.png)
 
